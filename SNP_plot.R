@@ -4,7 +4,7 @@ library(tidyverse)
 # Plot of SNPs > 30% freq.
 # Already filtered out SNPs present in ancestral line.
 
-df<-read.table("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/student_project/ella_studentship/ella_snps/30pc_freq_SNP_list.txt",
+df<-read.table("PATH_TO_REPO/30pc_freq_SNP_list.txt",
             sep = "\t", header = T)  
 
 df %>%
