@@ -10,7 +10,7 @@ library(readxl)
 
 # OD first
 
-od<-read_excel("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/student_project/ella_studentship/data/Ella_Data_Summership.xlsx",
+od<-read_excel("PATH_TO_REPO/Ella_Data_Summership.xlsx",
                sheet = 1)
 
 od<-od %>%
@@ -36,7 +36,7 @@ a<-od %>%
   guides(fill = 'none')
 
 # Phage titres
-pfu<-read_excel("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/student_project/ella_studentship/data/Ella_Data_Summership.xlsx",
+pfu<-read_excel("PATH_TO_REPO/Ella_Data_Summership.xlsx",
                sheet = 4)
 
 pfu<-pfu %>%
@@ -64,7 +64,7 @@ b<-pfu %>%
 
 # Resistance
 
-res<-read_excel("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/student_project/ella_studentship/data/Ella_Data_Summership.xlsx",
+res<-read_excel("PATH_TO_REPO/Ella_Data_Summership.xlsx",
                 sheet = 6)
 
 c<-res %>%
