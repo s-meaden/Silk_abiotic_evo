@@ -6,7 +6,7 @@ library(reshape2)
 
 # Check plate reader data for tn7 growth rates and ompW growth in NaCl.
 
-df<-read_excel("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/comp_expts/prelim_experiment/biolog_assay/20hr_growth_curve_01072021.xlsx", skip = 9)
+df<-read_excel("PATH_TO_REPO/20hr_growth_curve_01072021.xlsx", skip = 9)
 
 names(df)
 
@@ -24,7 +24,7 @@ df<-df %>%
 
 # Example format:
 #meta<-data.frame(well_id = c('A01', 'A02'), treatment = c('treatment', 'control'))
-meta<-read.csv("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/comp_expts/prelim_experiment/biolog_assay/plate_reader_metadata.csv")
+meta<-read.csv("PATH_TO_REPO/plate_reader_metadata.csv")
 
 df2<-df %>%
   right_join(meta, by = "well_id", all) %>%
@@ -79,7 +79,7 @@ m2<-update(m1,~.-geno)
 anova(m1, m2, test = "F")
 
 ### Add biolog data and make into panel plot:
-df2<-read.csv("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/comp_expts/prelim_experiment/biolog_assay/ompW_lacA_results_26hrs.csv")
+df2<-read.csv("PATH_TO_REPO/ompW_lacA_results_26hrs.csv")
 # Is actually 28hours but mislabelled file.
 
 lacA2<-df2 %>%
