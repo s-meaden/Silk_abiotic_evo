@@ -45,7 +45,7 @@ prokka --outdir LC53 --force --prefix LC53 --kingdom Viruses --hmms all_phrogs.h
 
 # Test run:
 breseq -r LC53/LC53.gbk data/ANC_S26_R1_001_trimmed.fastq.gz  data/ANC_S26_R2_001_trimmed.fastq.gz -j 2 -p
-# 0% alignmend rate- thank god!
+# 0% alignmend rate.
 
 breseq -r LC53/LC53.gbk data/P_4_1_S43_R1_001_trimmed.fastq.gz  data/P_4_1_S43_R2_001_trimmed.fastq.gz -j 2 -p
 
